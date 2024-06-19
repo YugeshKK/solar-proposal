@@ -1,0 +1,1770 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Proposal</title>
+    <!-- <link rel="stylesheet" href="pratik.css"> -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="https://irp.cdn-website.com/5cb12704/site_favicon_16_1706194629651.ico">
+    <script src="https://kit.fontawesome.com/3a2aa008d5.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="nav-overlay">
+        <div class="nav-dialogue">
+             <div class="nav-diag-top">
+                  <div class="nav-header">Navigation</div>
+                  <div class="nav-close" onclick="toggleNavDiag()"><i class="fa-regular fa-xmark"></i></div>
+             </div>
+             <div class="nav-blocks">
+                  <div id="cover-section-nav" class="nav-block" onclick="scrollToSection('intro')">
+                       <p class="page-number">1</p><p class="page-name">Homepage</p>
+                  </div>
+                  <div id="cost-analysis-nav" class="nav-block" onclick="scrollToSection('solarone')">
+                       <p class="page-number">2</p><p class="page-name">Cost Analysis</p>
+                  </div>
+                  <div id="system-design-nav" class="nav-block" onclick="scrollToSection('solartwo')">
+                       <p class="page-number">3</p><p class="page-name">System Design</p>
+                  </div>
+                  <div id="production-and-consumption-nav" class="nav-block" onclick="scrollToSection('sun')">
+                       <p class="page-number">4</p><p class="page-name">Production and Consumption</p>
+                  </div>
+                  <div id="utility-bill-over-time-nav" class="nav-block" onclick="scrollToSection('panel')">
+                       <p class="page-number">5</p><p class="page-name">Your Utility Bill Over Time</p>
+                  </div>
+                  <div id="financial-nav" class="nav-block" onclick="scrollToSection('comments')">
+                       <p class="page-number">6</p><p class="page-name">Financial</p>
+                  </div>
+                  <div id="why-solar-nav" class="nav-block" onclick="scrollToSection('power')">
+                       <p class="page-number">7</p><p class="page-name">Why Solar?</p>
+                  </div>
+                  <div id="investment-and-incentives-nav" class="nav-block" onclick="scrollToSection('tren')">
+                       <p class="page-number">8</p><p class="page-name">Investments and Incentives</p>
+                  </div>
+                  <div id="project-progress-nav" class="nav-block" onclick="scrollToSection('gov')">
+                       <p class="page-number">9</p><p class="page-name">Project progress</p>
+                  </div>
+                  <div id="inflation-at-a-40-year-high-nav" class="nav-block" onclick="scrollToSection('more')">
+                       <p class="page-number">10</p><p class="page-name">Inflation at a 40 year high</p>
+                  </div>
+                  <div id="which-would-you-choose-nav" class="nav-block" onclick="scrollToSection('solarh')">
+                       <p class="page-number">11</p><p class="page-name">Which Would You Choose?</p>
+                  </div>
+                  <div id="how-will-you-use-your-incentive-nav" class="nav-block" onclick="scrollToSection('solarm')">
+                       <p class="page-number">12</p><p class="page-name">How will you use your incentive?</p>
+                  </div>
+                  <div id="our-process-nav" class="nav-block" onclick="scrollToSection('snap')">
+                       <p class="page-number">13</p><p class="page-name">Our Process</p>
+                  </div>
+                  <div id="proposal-details-nav" class="nav-block" onclick="scrollToSection('rev')">
+                       <p class="page-number">14</p><p class="page-name">Proposal Details</p>
+                  </div>
+                  <div id="faq-nav" class="nav-block" onclick="scrollToSection('secBest')">
+                       <p class="page-number">15</p><p class="page-name">FAQ</p>
+                  </div>
+                  <div id="next-steps-nav" class="nav-block" onclick="scrollToSection('cleanEn')">
+                       <p class="page-number">16</p><p class="page-name">Next Steps</p>
+                  </div>
+             </div>
+        </div>
+   </div>
+   <div class="scroll-btns">
+    <button class="scroll-btn" id="prev-scroll-btn" onclick="onScrollBtnClick('left')"><i class="fa-regular fa-arrow-left"></i></button>
+    
+    <button class="scroll-btn" id="next-scroll-btn" onclick="onScrollBtnClick('right')"><i class="fa-regular fa-arrow-right"></i></button>
+</div>
+<div id="content-scroll" class="content-main-container">
+    <div class="nav-diag-btn" onclick="toggleNavDiag()">
+        <i class="fa-regular fa-compass"></i>
+   </div>
+    <div id="intro" class="section section-flex-column">
+        <div class="intro-text">
+            <img style="display: block;" src="https://lirp.cdn-website.com/5cb12704/dms3rep/multi/opt/logo-9bb883f7-176w.png" height="50" alt="">
+            <h1><span style="color: #FF7518;">SOLAR</span> ENERGY <br> PROPOSAL</h1>
+            <p>BUILDING A SUSTAINABLE FUTURE</p>
+        </div>
+    </div>
+    <div id="solarone"  class="section">
+        <div class="slogo">
+            <img src="https://lirp.cdn-website.com/5cb12704/dms3rep/multi/opt/logo-9bb883f7-176w.png" height="40" alt="">
+        </div>
+        <div class="solaronetext" >
+            <h1>Have you looked into going <span style="color: #FF7518;">Solar</span> before?</h1>
+            <p>1 of 2</p>
+            <div class="solaroneinp">
+                <input type="text" placeholder="Next Questions">
+                <img src="assets/right-arr.png" height="45" alt="">
+            </div>
+        </div>
+   </div>
+   <div id="solartwo" class="section">
+    <div class="slogo">
+        <img src="https://lirp.cdn-website.com/5cb12704/dms3rep/multi/opt/logo-9bb883f7-176w.png" height="40" alt="">
+    </div>
+    <div class="solartwotext">
+        <h1>Have you ever sat down with someone about going <span style="color: #FF7518;">Solar</span> before?</h1>
+        <p>2 of 2</p>
+        <div class="solartwoinp">
+            <input type="text" placeholder="Next Questions">
+            <img src="assets/right-arr.png" height="45" alt="">
+        </div>
+    </div>
+   </div>
+   <div id="sun" class="section">
+    <div class="slogo">
+        <img src="https://lirp.cdn-website.com/5cb12704/dms3rep/multi/opt/logo-9bb883f7-176w.png" height="40" alt="">
+    </div>
+    <div class="suncont">
+        <div class="sunmain">
+            <h1>About our <span style="color: #FF7518;">Solar</span> Consultant</h1>
+            <div class="sunone">
+                <img src="assets/qr.png" width="100" alt="">
+                <div id="per-info">
+                    <h3>John Smith</h3>
+                    <p><i class="fa-regular fa-phone"></i>91+123456789</p>
+                    <p><i class="fa-regular fa-envelope"></i>jaimelannister@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <img src="assets/jaime.avif" id="prof" alt="">
+    </div>
+   </div>
+   <div id="panel" class="section">
+    <div class="slogo" style="padding: 50px;">
+        <img src="https://lirp.cdn-website.com/5cb12704/dms3rep/multi/opt/logo-9bb883f7-176w.png" height="40" alt="">
+    </div>
+    <div class="p5cont">
+        <div>
+            <img src="assets/13.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore possimus nesciunt ut sunt necessitatibus, praesentium nam doloribus ea perspiciatis error voluptates distinctio rerum repellendus eius quisquam? Debitis excepturi veniam tempore.</p>
+        </div>
+        <div>
+            <img src="assets/9.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore possimus nesciunt ut sunt necessitatibus, praesentium nam doloribus ea perspiciatis error voluptates distinctio rerum repellendus eius quisquam? Debitis excepturi veniam tempore.</p>
+        </div>
+        <div>
+            <img src="assets/solar-h.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore possimus nesciunt ut sunt necessitatibus, praesentium nam doloribus ea perspiciatis error voluptates distinctio rerum repellendus eius quisquam? Debitis excepturi veniam tempore.</p>
+        </div>
+    </div>
+   </div>
+   <div id="comments" class="section">
+    <div class="com-one">
+        <div class="style-1">
+            <img src="assets/bronze.png" alt="">
+            <h1>Awards and Recognition</h1>
+        </div>
+        <div id="com-style"></div>
+    </div>
+
+    <div class="com-two">
+        <div class="slogo" style="align-self: flex-end;">
+            <img src="https://lirp.cdn-website.com/5cb12704/dms3rep/multi/opt/logo-9bb883f7-176w.png" height="40" alt="">
+        </div>
+        <h1 style="display: flex;">
+            <span style="color: #4285F4;">G</span>
+            <span style="color: #EA4335;">o</span>
+            <span style="color: #FBBC05;">o</span>
+            <span style="color: #4285F4;">g</span>
+            <span style="color: #34A853;">l</span>
+            <span style="color: #EA4335;">e</span>
+        </h1>
+        <div class="com-div">
+            <div class="com-block">
+                <div class="c-1">
+                    <i class="fa-regular fa-user"></i>
+                    <div>
+                        <p><b>John Smith</b></p>
+                        <p>08/12/23 . Google</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="assets/star.png" alt="">
+                    <img src="assets/star.png" alt="">
+                    <img src="assets/star.png" alt="">
+                    <img src="assets/star.png" alt="">
+                    <img src="assets/star.png" alt="">
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia possimus eaque cumque velit nesciunt ipsa voluptate cum neque explicabo commodi?</p>
+                </div>
+            </div>
+            <div class="com-block">
+                <div class="c-1">
+                    <i class="fa-regular fa-user"></i>
+                    <div>
+                        <p><b>John Smith</b></p>
+                        <p>08/12/23 . Google</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="assets/star.png" alt="">
+                    <img src="assets/star.png" alt="">
+                    <img src="assets/star.png" alt="">
+                    <img src="assets/star.png" alt="">
+                    <img src="assets/star.png" alt="">
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia possimus eaque cumque velit nesciunt ipsa voluptate cum neque explicabo commodi?</p>
+                </div>
+            </div>
+            <div class="com-block">
+                <div class="c-1">
+                    <i class="fa-regular fa-user"></i>
+                    <div>
+                        <p><b>John Smith</b></p>
+                        <p>08/12/23 . Google</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="assets/star.png" alt="">
+                    <img src="assets/star.png" alt="">
+                    <img src="assets/star.png" alt="">
+                    <img src="assets/star.png" alt="">
+                    <img src="assets/star.png" alt="">
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia possimus eaque cumque velit nesciunt ipsa voluptate cum neque explicabo commodi?</p>
+                </div>
+            </div>
+            <div class="com-block">
+                <div class="c-1">
+                    <i class="fa-regular fa-user"></i>
+                    <div>
+                        <p><b>John Smith</b></p>
+                        <p>08/12/23 . Google</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="assets/star.png" alt="">
+                    <img src="assets/star.png" alt="">
+                    <img src="assets/star.png" alt="">
+                    <img src="assets/star.png" alt="">
+                    <img src="assets/star.png" alt="">
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia possimus eaque cumque velit nesciunt ipsa voluptate cum neque explicabo commodi?</p>
+                </div>
+            </div>
+            <div class="com-block">
+                <div class="c-1">
+                    <i class="fa-regular fa-user"></i>
+                    <div>
+                        <p><b>John Smith</b></p>
+                        <p>08/12/23 . Google</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="assets/star.png" alt="">
+                    <img src="assets/star.png" alt="">
+                    <img src="assets/star.png" alt="">
+                    <img src="assets/star.png" alt="">
+                    <img src="assets/star.png" alt="">
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia possimus eaque cumque velit nesciunt ipsa voluptate cum neque explicabo commodi?</p>
+                </div>
+            </div>
+            <div class="com-block">
+                <div class="c-1">
+                    <i class="fa-regular fa-user"></i>
+                    <div>
+                        <p><b>John Smith</b></p>
+                        <p>08/12/23 . Google</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="assets/star.png" alt="">
+                    <img src="assets/star.png" alt="">
+                    <img src="assets/star.png" alt="">
+                    <img src="assets/star.png" alt="">
+                    <img src="assets/star.png" alt="">
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia possimus eaque cumque velit nesciunt ipsa voluptate cum neque explicabo commodi?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+   <div id="power" class="section">
+    <div class="slogo">
+        <img src="https://lirp.cdn-website.com/5cb12704/dms3rep/multi/opt/logo-9bb883f7-176w.png" height="40" alt="">
+    </div>
+    <div class="p6cont">
+        <h1>Traditional Power Consumption</h1>
+        <p>America has traditionally relied on power plants to generate electricity; burning enormous amounts of natural resources such as coal and natural gas, leaving a wake of irreparable damage to our environment.</p>
+        <div class="p6img">
+            <div><button  onclick="changeText('mine')"><img src="assets/cart.png"  alt=""></button></div>
+            <div><button onclick="changeText('fact')"><img src="assets/factory_9712299.png"  alt=""></button></div>
+            <div><button onclick="changeText('grid')"><img src="assets/electricity_2860076.png"  alt=""></button></div>
+            <div><button onclick="changeText('house')"><img src="assets/home.png"  alt=""></button></div>
+        </div>
+        <p class="p6t" id="text">Coal and natural gas are responsible for nearly 70% of electricity generation in the U.S., and demand is directly influencing rising utility prices. Mining these resources causes irreparable damage to the environment.</p>
+    </div>
+   </div>
+   <div id="tren" class="section">
+    <div class="slogo">
+        <img src="https://lirp.cdn-website.com/5cb12704/dms3rep/multi/opt/logo-9bb883f7-176w.png" height="40" alt="">
+    </div>
+    <div class="p7cont">
+        <div class="p7one">
+            <h1><b>Traditional Energy</b></h1>
+            <p id="col">collection</p>
+            <p id="gen">generation</p>
+            <p id="tra">Transference</p>
+            <p id="dis">Distribution</p>
+            <p id="con">Consumption</p>
+        </div>
+        <div class="p7two">
+            <p><b><span style="text-decoration: underline;">Expen</span>sive Fees</b></p>
+            <p>Traditional energy goes through an inefficient journey as it's shipped to your house.</p>
+            <p>This is a major contributing factor to why utility rates are so high.</p>
+            <p>It's an outdated business model.</p>
+            <div class="p7btn">
+                <button>Learn More</button>
+                <img src="assets/right-arr.png" width="30" alt="">
+            </div>
+        </div>
+
+    </div>
+   </div>
+   <div id="gov" class="section">
+    <div class="slogo">
+        <img src="https://lirp.cdn-website.com/5cb12704/dms3rep/multi/opt/logo-9bb883f7-176w.png" height="40" alt="">
+    </div>
+    <div class="p8cont">
+        <h1>Government Money</h1>
+        <div class="p8blocks">
+            <div class="p8b">
+                <div><p style="padding-top: 40px;">Electric Vehicles</p></div>
+                <div><p>Higher Power Computer Processing ( AI & Bitcoin Mining)</p></div>
+            </div>
+            <div id="p8mid">
+           <div id="arr">
+            <img id="a1" src="assets/icons8-arrow-64.png" alt="">
+            <img id="a2" src="assets/icons8-arrow-64.png" alt="">
+            <img id="a3" src="assets/icons8-arrow-64.png" alt="">
+            <img id="a4" src="assets/icons8-arrow-64.png" alt="">
+            <img id="bulb" src="assets/icons8-bulb-50.png" alt="">
+           </div>
+                <div><p>Future challenges in terms of demands</p></div>
+            </div>
+            <div class="p8b">
+                <div><p>Increased Number Of Devices w/ higher amperage requirements</p></div>
+                <div><p style="padding-top: 40px;">Growing Population</p></div>
+            </div>
+        </div>
+        <div class="p8last">
+            <p>In 2006, they launched the Solar Incentive Tax Credit program (ITC) to provide motivation and aid to homeowners go green. </p>
+            <p>The ITC is a 30 percent tax credit for individuals installing solar systems on residential property. </p>
+            <p>Since then, the solar industry has grown by more than 200x, so it was really effective.</p>
+        </div>
+    </div>
+   </div>
+   <div id="more" class="section">
+    <div class="slogo">
+        <img src="https://lirp.cdn-website.com/5cb12704/dms3rep/multi/opt/logo-9bb883f7-176w.png" height="40" alt="">
+    </div>
+    <div class="p9cont">
+        <h1 >More and More People Choose Solar Every Day</h1>
+        <div class="p9blocks">
+            <div class="p9out">
+                <div class="p9in">
+                    <img src="assets/icons8-plug-60.png" width="70" alt="">
+                    <p><b>23.3</b><br> million</p>
+                    <p class="p9line"></p>
+                    <p>Homes powered  by solar</p>
+                </div>
+            </div>
+            <div class="p9out">
+                <div class="p9in">
+                    <img src="assets/icons8-stock-80.png" width="70" alt="">
+                    <p><b>400%</b><br>growth</p>
+                    <p class="p9line"></p>
+                    <p>Expected growth rate of solar industry from now until 2030*</p>
+                </div>
+            </div>
+            <div class="p9out">
+                <div class="p9in">
+                    <img src="assets/icons8-electricity-50.png" width="70" alt="">
+                    <p><b>10</b><br> years</p>
+                    <p class="p9line"></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing e.</p>
+                </div>
+            </div>
+            <div class="p9out">
+                <div class="p9in">
+                    <img src="assets/icons8-wallet-50.png" width="70" alt="">
+                    <p><b>95%</b><br> homeowners</p>
+                    <p class="p9line"></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing e.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p id="p9last">*according to Solar Energy Industries Association</p>
+   </div>
+   <div id="solarh" class="section">
+    <div class="slogo">
+        <img src="https://lirp.cdn-website.com/5cb12704/dms3rep/multi/opt/logo-9bb883f7-176w.png" height="40" alt="">
+    </div>
+    <div class="p10cont">
+        <p style="text-align: center; padding: 5px;">Household Names Have Already Made The Shift</p>
+        <div class="p10img">
+            <img src="assets/solar-h.jpg" width="300"  alt="">
+            <img src="assets/solar-h.jpg" width="300"  alt="">
+            <img src="assets/solar-h.jpg" width="300"  alt="">
+            <img src="assets/solar-h.jpg" width="200"  alt="">
+            <img src="assets/solar-h.jpg" width="200"  alt="">
+            <img src="assets/solar-h.jpg" width="200"  alt="">
+            <img src="assets/solar-h.jpg" width="200"  alt="">
+        </div>
+    </div>
+   </div>
+   <div id="solarm" class="section">
+    <img src="assets/install.jpg" id="p11im">
+    <div class="p11cont">
+        <div class="slogo">
+            <img src="https://lirp.cdn-website.com/5cb12704/dms3rep/multi/opt/logo-9bb883f7-176w.png" height="40" alt="">
+        </div>
+        <h1 style="color: #FF7518;"><span><b>Who pays for it?</b></span></h1>
+        <h1>Our Taxes...</h1>
+        <p style=" line-height: 1.5;">Which means we all do, whether you decide to benefit from it or not! <br>
+        Since your going to be paying for it regardless, wouldn’t you agree it makes sense to <span style="color: #FF7518;">take advantage of it and get your portion of the funds?</span>
+            </p>
+    </div>
+   </div>
+   <div id="snap" class="section">
+    <div class="slogo">
+        <img src="https://lirp.cdn-website.com/5cb12704/dms3rep/multi/opt/logo-9bb883f7-176w.png" height="40" alt="">
+    </div>
+    <div class="p12cont">
+        <h1><b>Snapshot of your Current Energy Usage</b></h1>
+        <p>Your current energy usage and monthly expenses</p>
+        <p>Throughout the year, energy usage fluctuates up and down based off weather and other factors.</p>
+        <div class="p12bl">
+            <img src="assets/icons8-paper-plane-64.png" width="20" alt="">
+            <p>Based on the last 12 months you've spend $0 Total Annual Expense.</p>
+        </div>
+        <div class="p12bl">
+            <img src="assets/icons8-paper-plane-64.png" width="20" alt="">
+            <p>Each month, you average of $1000KWs used.</p>
+        </div>
+        <div class="p12bl">
+            <img src="assets/icons8-paper-plane-64.png" width="20" alt="">
+            <p>That's an average of $0 per month.</p>
+        </div>
+    </div>
+   </div>
+   <div id="rev" class="section">
+    <div class="slogo" style="align-self: flex-start;">
+        <img src="https://lirp.cdn-website.com/5cb12704/dms3rep/multi/opt/logo-9bb883f7-176w.png" height="40" alt="">
+    </div>
+    <div class="p13cont">
+    <div style="align-self: flex-start;">
+        <h1 ><b>Inflation at a 40 year High</b></h1>
+        <p >Inflation  raises prices, loweing your purchasing power</p>
+    </div>
+    <div class="p13last">
+        <div id="gas">
+            <p></p>
+            <p>GAS</p>
+            <p>FOOD</p>
+            <p>HOME</p>
+        </div>
+        <div>
+            <p class="p13year">2010</p>
+            <img src="assets/tools-and-utensils.png" alt="">
+            <img src="assets/grocery-cart.png" alt="">
+            <img src="assets/house.png" alt="">
+        </div>
+        <div>
+            <p class="p13year">2015</p>
+            <img src="assets/tools-and-utensils.png" alt="">
+            <img src="assets/grocery-cart.png" alt="">
+            <img src="assets/house.png" alt="">
+        </div>
+        <div>
+            <p class="p13year">2021</p>
+            <img src="assets/tools-and-utensils.png" alt="">
+            <img src="assets/grocery-cart.png" alt="">
+            <img src="assets/house.png" alt="">
+        </div>
+        <div>
+            <p class="p13year">2023</p>
+            <img src="assets/tools-and-utensils.png" alt="">
+            <img src="assets/grocery-cart.png" alt="">
+            <img src="assets/house.png" alt="">
+        </div>
+    </div>
+    </div>
+   </div>
+   <div id="secBest" class="section">
+    <div class="slogo" style="align-self: flex-start; padding: 50px;">
+        <img src="https://lirp.cdn-website.com/5cb12704/dms3rep/multi/opt/logo-9bb883f7-176w.png" height="40" alt="">
+    </div>
+    <div class="secbcont">
+        <div class="secone">
+            <p>The best time to go solar was 10 years ago,</p>
+            <p style="color: #FF7518;"><span><b>THE SECOND BEST TIME IS NOW!</b></span></p>
+            <p>Do nothing and watch your bill rise</p>
+            <div>
+                <p><b>$313</b></p>
+                <p>CURRENT AVERAGE <br> UTILITY BILL</p>
+            </div>
+        </div>
+        <div class="sectwo">
+            <div>
+                <img src="assets/icons8-paper-64.png" width="50" alt="">
+                <p>Bill amount this year <br><span><b>$3,757</b></span></p>
+            </div>
+            <div>
+                <img src="assets/icons8-paper-64.png" width="50" alt="">
+                <p>In 10 years your annual bill will be <br><span><b>$5,825 / year</b></span></p>
+            </div>
+            <div>
+                <img src="assets/icons8-paper-64.png" width="50" alt="">
+                <p>In 20 years your annual bill will be <br><span><b>$9,494 / year</b></span></p>
+            </div>
+            <div>
+                <img src="assets/icons8-paper-64.png" width="50" alt="">
+                <p>At the rate of consumption, your 30 year cost of not switching to solar is <br><span><b>$249,615 </b></span></p>
+            </div>
+        </div>
+    </div>
+   </div>
+   <div id="cleanEn" class="section">
+    <div class="slogo" style="align-self: flex-start;">
+        <img src="https://lirp.cdn-website.com/5cb12704/dms3rep/multi/opt/logo-9bb883f7-176w.png" height="40" alt="">
+    </div>
+    <div class="cleancont">
+        <h1>How clean Energy is made</h1>
+        <img src="assets/15.png" width="80" alt="">
+    </div>
+   </div>
+
+
+   <div id="included-warranty-protection"
+   class="section page-29-full-house-solar-pannal-background"
+ >
+   <div class="container header">
+     <div class="slogo">
+       <img src="/assets/sunbase.png" alt="sunbase_logo" />
+     </div>
+   </div>
+   <div class="main-content">
+     <div class="wrapper container">
+       <div class="page-29-content-wrapper">
+         <div class="page-29-content-part-1">
+           <div class="page-29-content-heading">
+             <div class="page-29-content-img">
+               <img src="/assets/sunbase.png" alt="sunbase_img" />
+             </div>
+             <h2>30 years of mentoring and warranty</h2>
+           </div>
+         </div>
+         <div class="page-29-content-part-2 transparent-black-bg">
+           <div class="page-29-included-warranty-protection-wrapper">
+             <div class="page-29-warranty-heading">
+               <h4>INCLUDED WARRANTY PROTECTION</h4>
+               <img
+                 src="/assets/badge-check-solid.svg"
+                 alt="verified-badge_img"
+               />
+             </div>
+             <div class="page-29-protection-info">
+               <div class="page-29-img-wrapper">
+                 <img
+                   src="/assets/gear-complex-sharp-light.svg"
+                   alt="technical-support_img"
+                 />
+               </div>
+               <div class="page-29-content-info">
+                 <h4>Roof Penetrations</h4>
+                 <p>
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                   sed do eiusmod tempor incididunt ut labore et dolore
+                   magna aliqua.
+                 </p>
+               </div>
+             </div>
+             <div class="page-29-protection-info">
+               <div class="page-29-img-wrapper">
+                 <img
+                   src="/assets/gear-complex-sharp-light.svg"
+                   alt="technical-support_img"
+                 />
+               </div>
+               <div class="page-29-content-info">
+                 <h4>Labor</h4>
+                 <p>
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                   sed do eiusmod tempor incididunt ut labore et dolore
+                   magna aliqua.
+                 </p>
+               </div>
+             </div>
+             <div class="page-29-protection-info">
+               <div class="page-29-img-wrapper">
+                 <img
+                   src="/assets/gear-complex-sharp-light.svg"
+                   alt="technical-support_img"
+                 />
+               </div>
+               <div class="page-29-content-info">
+                 <h4>Ownership Transfer</h4>
+                 <p>
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                   sed do eiusmod tempor incididunt ut labore et dolore
+                   magna aliqua.
+                 </p>
+               </div>
+             </div>
+             <div class="page-29-protection-info">
+               <div class="page-29-img-wrapper">
+                 <img
+                   src="/assets/gear-complex-sharp-light.svg"
+                   alt="technical-support_img"
+                 />
+               </div>
+               <div class="page-29-content-info">
+                 <h4>Monitoring</h4>
+                 <p>
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                   sed do eiusmod tempor incididunt ut labore et dolore
+                   magna aliqua.
+                 </p>
+               </div>
+             </div>
+             <div class="page-29-protection-info">
+               <div class="page-29-img-wrapper">
+                 <img
+                   src="/assets/gear-complex-sharp-light.svg"
+                   alt="technical-support_img"
+                 />
+               </div>
+               <div class="page-29-content-info">
+                 <h4>Parts</h4>
+                 <p>
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                   sed do eiusmod tempor incididunt ut labore et dolore
+                   magna aliqua.
+                 </p>
+               </div>
+             </div>
+             <div class="page-29-protection-info">
+               <div class="page-29-img-wrapper">
+                 <img
+                   src="/assets/gear-complex-sharp-light.svg"
+                   alt="technical-support_img"
+                 />
+               </div>
+               <div class="page-29-content-info">
+                 <h4>Battery</h4>
+                 <p>
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                   sed do eiusmod tempor incididunt ut labore et dolore
+                   magna aliqua.
+                 </p>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+
+ <div id="sunbase-project-progress"
+   class="section page-30-custom-background"
+ >
+   <div class="container header">
+     <div class="page-30-logo-heading-wrapper">
+       <div class="slogo">
+         <img src="/assets/sunbase.png" alt="sunbase_logo" />
+       </div>
+       <div class="page-30-custom-header">
+         <h4>Sunbase Project progress</h4>
+       </div>
+     </div>
+   </div>
+   <div class="main-content">
+     <div class="wrapper container">
+       <div class="page-30-content">
+         <div class="page-30-content-wrapper">
+           <div class="page-30-custom-header-2-wrapper">
+             <div class="page-30-custom-header-2">
+               <h5>WE TAKE CARE OF IT ALL</h5>
+             </div>
+           </div>
+           <div class="page-30-features-content">
+             <div class="page-30-part-1">
+               <div
+                 id="page-30-solar-features"
+                 class="page-30-solar-features"
+               >
+                 <div class="page-30-feature">
+                   <div class="page-30-img-container">
+                     <img src="/assets/11.png" alt="house_img" />
+                   </div>
+                   <div class="page-30-right-arrow-img-container">
+                     <img
+                       src="/assets/orange-arrow.png"
+                       alt="right-arrow_img"
+                     />
+                   </div>
+                   <div class="page-30-feature-info">
+                     <h3>Site Survey</h3>
+                     <p>
+                       An experienced technician conducts a thorough review
+                       of your home to finalize any technical requirements.
+                     </p>
+                   </div>
+                 </div>
+                 <span>1 - 2 Weeks</span>
+                 <div class="page-30-feature">
+                   <div class="page-30-img-container">
+                     <img src="/assets/11.png" alt="house_img" />
+                   </div>
+                   <div class="page-30-right-arrow-img-container">
+                     <img
+                       src="/assets/black-arrow.png"
+                       alt="right-arrow_img"
+                     />
+                   </div>
+                   <div class="page-30-feature-info">
+                     <h3>Permitting</h3>
+                     <p>
+                       The appropriate permits are completed and filed, and
+                       submitted to the relevant housing authorities for
+                       approval.
+                     </p>
+                   </div>
+                 </div>
+                 <span>4 - 10 Weeks</span>
+                 <div class="page-30-feature">
+                   <div class="page-30-img-container">
+                     <img src="/assets/11.png" alt="house_img" />
+                   </div>
+                   <div class="page-30-right-arrow-img-container">
+                     <img
+                       src="/assets/orange-arrow.png"
+                       alt="right-arrow_img"
+                     />
+                   </div>
+                   <div class="page-30-feature-info">
+                     <h3>Installation</h3>
+                     <p>
+                       The installation will not take more than a few
+                       hours, but will save your family money for years to
+                       come.
+                     </p>
+                   </div>
+                 </div>
+                 <span>1 - 2 Weeks</span>
+                 <div class="page-30-feature">
+                   <div class="page-30-img-container">
+                     <img src="/assets/11.png" alt="house_img" />
+                   </div>
+                   <div class="page-30-right-arrow-img-container">
+                     <img
+                       src="/assets/black-arrow.png"
+                       alt="right-arrow_img"
+                     />
+                   </div>
+                   <div class="page-30-feature-info">
+                     <h3>Inspection</h3>
+                     <p>
+                       After the system is installed it must be properly
+                       inspected before the system can be turned on.
+                     </p>
+                   </div>
+                 </div>
+                 <span>1 - 2 Weeks</span>
+                 <div class="page-30-feature">
+                   <div class="page-30-img-container">
+                     <img src="/assets/11.png" alt="house_img" />
+                   </div>
+                   <div class="page-30-right-arrow-img-container">
+                     <img
+                       src="/assets/orange-arrow.png"
+                       alt="right-arrow_img"
+                     />
+                   </div>
+                   <div class="page-30-feature-info">
+                     <h3>PTO</h3>
+                     <p>
+                       The Permission to Operate phase is the final
+                       authorization for the solar system to be turned on
+                       and begin generating electricity.
+                     </p>
+                   </div>
+                 </div>
+               </div>
+               <div
+                 id="page-30-solar-with-roof-features"
+                 class="page-30-solar-with-roof-features page-30-hidden"
+               >
+                 <div class="page-30-feature">
+                   <div class="page-30-img-container">
+                     <img src="/assets/11.png" alt="house_img" />
+                   </div>
+                   <div class="page-30-right-arrow-img-container">
+                     <img
+                       src="/assets/orange-arrow.png"
+                       alt="right-arrow_img"
+                     />
+                   </div>
+                   <div class="page-30-feature-info">
+                     <h3>Site Survey</h3>
+                     <p>
+                       An experienced technician conducts a thorough review
+                       of your home to finalize any technical requirements.
+                     </p>
+                   </div>
+                 </div>
+                 <div class="page-30-feature">
+                   <div class="page-30-img-container">
+                     <img src="/assets/11.png" alt="house_img" />
+                   </div>
+                   <div class="page-30-right-arrow-img-container">
+                     <img
+                       src="/assets/black-arrow.png"
+                       alt="right-arrow_img"
+                     />
+                   </div>
+                   <div class="page-30-feature-info">
+                     <h3>Permitting</h3>
+                     <p>
+                       The appropriate permits are completed and filed, and
+                       submitted to the relevant housing authorities for
+                       approval.
+                     </p>
+                   </div>
+                 </div>
+                 <div class="page-30-feature">
+                   <div class="page-30-img-container">
+                     <img src="/assets/11.png" alt="house_img" />
+                   </div>
+                   <div class="page-30-right-arrow-img-container">
+                     <img
+                       src="/assets/orange-arrow.png"
+                       alt="right-arrow_img"
+                     />
+                   </div>
+                   <div class="page-30-feature-info">
+                     <h3>Roof Installation</h3>
+                     <p>
+                       Your new roof will be installed and inspected prior
+                       to adding your new solar panels.
+                     </p>
+                   </div>
+                 </div>
+                 <div class="page-30-feature">
+                   <div class="page-30-img-container">
+                     <img src="/assets/11.png" alt="house_img" />
+                   </div>
+                   <div class="page-30-right-arrow-img-container">
+                     <img
+                       src="/assets/black-arrow.png"
+                       alt="right-arrow_img"
+                     />
+                   </div>
+                   <div class="page-30-feature-info">
+                     <h3>Installation</h3>
+                     <p>
+                       The installation will not take more than a few
+                       hours, but will save your family money for years to
+                       come.
+                     </p>
+                   </div>
+                 </div>
+                 <div class="page-30-feature">
+                   <div class="page-30-img-container">
+                     <img src="/assets/11.png" alt="house_img" />
+                   </div>
+                   <div class="page-30-right-arrow-img-container">
+                     <img
+                       src="/assets/orange-arrow.png"
+                       alt="right-arrow_img"
+                     />
+                   </div>
+                   <div class="page-30-feature-info">
+                     <h3>Inspection</h3>
+                     <p>
+                       After the system is installed it must be properly
+                       inspected before the system can be turned on.
+                     </p>
+                   </div>
+                 </div>
+
+                 <div class="page-30-feature">
+                   <div class="page-30-img-container">
+                     <img src="/assets/11.png" alt="house_img" />
+                   </div>
+                   <div class="page-30-right-arrow-img-container">
+                     <img
+                       src="/assets/black-arrow.png"
+                       alt="right-arrow_img"
+                     />
+                   </div>
+                   <div class="page-30-feature-info">
+                     <h3>PTO</h3>
+                     <p>
+                       The Permission to Operate phase is the final
+                       authorization for the solar system to be turned on
+                       and begin generating electricity.
+                     </p>
+                   </div>
+                 </div>
+               </div>
+               <div
+                 id="page-30-your-steps-features"
+                 class="page-30-your-steps-features page-30-hidden"
+               >
+                 <div class="page-30-feature">
+                   <div class="page-30-img-container">
+                     <img src="/assets/11.png" alt="house_img" />
+                   </div>
+                   <div class="page-30-right-arrow-img-container">
+                     <img
+                       src="/assets/orange-arrow.png"
+                       alt="right-arrow_img"
+                     />
+                   </div>
+                   <div class="page-30-feature-info">
+                     <h3>Site Survey</h3>
+                     <p>
+                       An experienced technician conducts a thorough review
+                       of your home to finalize any technical requirements.
+                     </p>
+                   </div>
+                 </div>
+
+                 <div class="page-30-feature">
+                   <div class="page-30-img-container">
+                     <img src="/assets/11.png" alt="house_img" />
+                   </div>
+                   <div class="page-30-right-arrow-img-container">
+                     <img
+                       src="/assets/black-arrow.png"
+                       alt="right-arrow_img"
+                     />
+                   </div>
+                   <div class="page-30-feature-info">
+                     <h3>Installation</h3>
+                     <p>
+                       The installation will not take more than a few
+                       hours, but will save your family money for years to
+                       come.
+                     </p>
+                   </div>
+                 </div>
+
+                 <div class="page-30-feature">
+                   <div class="page-30-img-container">
+                     <img src="/assets/11.png" alt="house_img" />
+                   </div>
+                   <div class="page-30-right-arrow-img-container">
+                     <img
+                       src="/assets/orange-arrow.png"
+                       alt="right-arrow_img"
+                     />
+                   </div>
+                   <div class="page-30-feature-info">
+                     <h3>Inspection</h3>
+                     <p>
+                       After the system is installed it must be properly
+                       inspected before the system can be turned on.
+                     </p>
+                   </div>
+                 </div>
+
+                 <div class="page-30-feature">
+                   <div class="page-30-img-container">
+                     <img src="/assets/11.png" alt="house_img" />
+                   </div>
+                   <div class="page-30-right-arrow-img-container">
+                     <img
+                       src="/assets/black-arrow.png"
+                       alt="right-arrow_img"
+                     />
+                   </div>
+                   <div class="page-30-feature-info">
+                     <h3>PTO</h3>
+                     <p>
+                       The Permission to Operate phase is the final
+                       authorization for the solar system to be turned on
+                       and begin generating electricity.
+                     </p>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="page-30-part-2">
+               <div class="page-30-buttons-wrapper">
+                 <button
+                   id="solar-btn"
+                   class="active"
+                   onclick="solarButtonFunctionality()"
+                 >
+                   Solar
+                 </button>
+                 <button
+                   id="solar-with-roof-btn"
+                   onclick="solarWithRoofButtonFunctionality()"
+                 >
+                   Solar with Roof
+                 </button>
+                 <button
+                   id="your-steps-btn"
+                   onclick="yourStepsButtonFunctionality()"
+                 >
+                   Your Steps
+                 </button>
+               </div>
+               <p>
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                 sed do eiusmod tempor incididunt ut labore et dolore magna
+                 aliqua.
+               </p>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+
+ <div id="my-client-base-app" class="section">
+   <div class="container header">
+     <div class="slogo">
+       <img src="/assets/sunbase.png" alt="sunbase_logo" />
+     </div>
+     <div class="verified-badge_img">
+       <img src="/assets/badge-check-solid.svg" alt="verified-badge_img" />
+     </div>
+   </div>
+   <div class="main-content">
+     <div class="wrapper container">
+       <div class="heading">
+         <h1>My Client Base App</h1>
+       </div>
+       <p class="page-31-sub-heading">
+         By integrating seamlessly with your SunPower® Equinox® and
+         SunVaulte storage system, the mySunPower app puts the power to
+         monitor system performance and control SunVault settings in the
+         palm of your hand.
+         <a href="#" class="special">Watch a demo of the app here.</a>
+       </p>
+       <div class="page-31-main-content">
+         <div class="page-31-main-content-wrapper">
+           <div class="page-31-orange-line"></div>
+           <div class="page-31-app-features-wrapper">
+             <div class="page-31-app-feature">
+               <div class="page-31-img-wrapper">
+                 <img src="/assets/phone-1.png" alt="phone-1_img" />
+               </div>
+               <div class="page-31-app-feature-info">
+                 <p>
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                   sed do eiusmod tempor incididunt ut labore et dolore
+                   magna aliqua.
+                 </p>
+               </div>
+             </div>
+             <div class="page-31-app-feature">
+               <div class="page-31-img-wrapper">
+                 <img src="/assets/phone-2.png" alt="phone-2_img" />
+               </div>
+               <div class="page-31-app-feature-info">
+                 <p>
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                   sed do eiusmod tempor incididunt ut labore et dolore
+                   magna aliqua.
+                 </p>
+               </div>
+             </div>
+             <div class="page-31-app-feature">
+               <div class="page-31-img-wrapper">
+                 <img src="/assets/phone-3.png" alt="phone-3_img" />
+               </div>
+               <div class="page-31-app-feature-info">
+                 <p>
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                   sed do eiusmod tempor incididunt ut labore et dolore
+                   magna aliqua.
+                 </p>
+               </div>
+             </div>
+             <div class="page-31-app-feature">
+               <div class="page-31-img-wrapper">
+                 <img src="/assets/phone-4.png" alt="phone-4_img" />
+               </div>
+               <div class="page-31-app-feature-info">
+                 <p>
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                   sed do eiusmod tempor incididunt ut labore et dolore
+                   magna aliqua.
+                 </p>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+
+ <div id="get-paid-by-sunbase"
+   class="section page-32-solar-pannel-background"
+ >
+   <div class="container header">
+     <div class="slogo">
+       <img src="/assets/sunbase.png" alt="sunbase_logo" />
+     </div>
+   </div>
+   <div class="main-content">
+     <div class="wrapper container">
+       <div class="page-32-main-content">
+         <div class="page-32-main-content-wrapper">
+           <div class="page-32-part-1">
+             <div class="page-32-heading-wrapper">
+               <h3>Get Paid by <span class="special">Sunbase</span></h3>
+               <p>
+                 How our customers become our number 1 fans and eventually
+                 into Sunbase Advocates.
+               </p>
+             </div>
+             <div class="page-32-info-wrapper">
+               <div class="page-32-features-info">
+                 <p>
+                   Give us a 5 star review if you believe we earned it!
+                 </p>
+                 <div class="page-32-features-list">
+                   <p>
+                     1. 90 day installation guarantee, or we cover your
+                     electric bill! This is provided that the delay is not
+                     due to the customer.
+                   </p>
+                   <p>
+                     2. Allow us to share your solar story - when someone
+                     goes solar, it might be because of you!
+                   </p>
+                   <p>
+                     3. Use our mobile friendly app to refer customers and
+                     receive rewards.
+                   </p>
+                 </div>
+               </div>
+               <span>sunbasedata.com</span>
+             </div>
+           </div>
+           <div class="page-32-part-2">
+             <div class="page-32-refer-friend-form-wrapper">
+               <form id="refer-friend-form">
+                 <h3>Refer a Friend</h3>
+                 <div class="page-32-form-input-wrapper">
+                   <label for="first-name">First Name :</label>
+                   <input type="text" placeholder="Enter First Name" />
+                 </div>
+                 <div class="page-32-form-input-wrapper">
+                   <label for="last-name">Last Name :</label>
+                   <input type="text" placeholder="Enter Last Name" />
+                 </div>
+                 <div class="page-32-form-input-wrapper">
+                   <label for="phone">Phone :</label>
+                   <input type="tel" placeholder="Enter First Name" />
+                 </div>
+                 <div class="page-32-form-input-wrapper">
+                   <label for="email">Email :</label>
+                   <input type="email" placeholder="Enter Email" />
+                 </div>
+                 <div class="page-32-form-input-wrapper">
+                   <label for="zip-code">Zip:</label>
+                   <input type="number" placeholder="Enter Zip" />
+                 </div>
+                 <button>Submit</button>
+               </form>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+
+ <div id="next-steps" class="section">
+   <div class="container header">
+     <div class="slogo">
+       <img src="/assets/sunbase.png" alt="sunbase_logo" />
+     </div>
+   </div>
+   <div class="main-content">
+     <div class="wrapper container">
+       <div class="page-33-main-content">
+         <div class="page-33-part-1">
+           <h1>Next Steps</h1>
+           <p>
+             This proposal is intended to show you the savings that you can
+             achieve by adding a solar system to your property. If you have
+             any questions our team would be happy to help.
+           </p>
+           <div class="page-33-buttons-container">
+             <button class="active">Sign Contract</button>
+             <button>Email Proposal</button>
+             <button>Print Proposal</button>
+           </div>
+         </div>
+         <div class="page-33-part-2">
+           <div class="page-33-img-container">
+             <img src="/assets/17.png" alt="house_img" />
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+
+ <div id="sunbase-corporation" class="section">
+   <div class="container header">
+     <div class="slogo">
+       <img src="/assets/sunbase.png" alt="sunbase_logo" />
+     </div>
+   </div>
+   <div class="main-content">
+     <div class="wrapper container">
+       <div class="page-34-main-content">
+         <div class="page-34-main-content-wrapper">
+           <div class="page-34-part-1">
+             <div class="page-34-part-1-wrapper">
+               <h1>Sunbase Corporation</h1>
+               <p>
+                 Choose the option that's best for your needs, help
+                 increase the value of your home? and enjoy the benefits of
+                 competitive interest rate offerings.
+               </p>
+             </div>
+           </div>
+           <div class="page-34-part-2">
+             <div class="page-34-features-list">
+               <div class="page-34-feature">
+                 <div class="page-34-img-container">
+                   <img src="/assets/badge-check-solid.svg" alt="" />
+                 </div>
+                 <div class="page-34-feature-info">
+                   <h5>38 Years</h5>
+                   <p>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing
+                     elit, sed do.
+                   </p>
+                 </div>
+               </div>
+               <div class="page-34-feature">
+                 <div class="page-34-img-container">
+                   <img src="/assets/badge-check-solid.svg" alt="" />
+                 </div>
+                 <div class="page-34-feature-info">
+                   <h5>
+                     Powering 550,000+ Residential Customers in the U.S.
+                   </h5>
+                   <p>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing
+                     elit, sed do.
+                   </p>
+                 </div>
+               </div>
+               <div class="page-34-feature">
+                 <div class="page-34-img-container">
+                   <img src="/assets/badge-check-solid.svg" alt="" />
+                 </div>
+                 <div class="page-34-feature-info">
+                   <h5>Backed by TotalEnergies SE</h5>
+                   <p>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing
+                     elit, sed do.
+                   </p>
+                 </div>
+               </div>
+               <div class="page-34-feature">
+                 <div class="page-34-img-container">
+                   <img src="/assets/badge-check-solid.svg" alt="" />
+                 </div>
+                 <div class="page-34-feature-info">
+                   <h5>Industry-Best Energy Solutions</h5>
+                   <p>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing
+                     elit, sed do.
+                   </p>
+                 </div>
+               </div>
+               <div class="page-34-feature">
+                 <div class="page-34-img-container">
+                   <img src="/assets/badge-check-solid.svg" alt="" />
+                 </div>
+                 <div class="page-34-feature-info">
+                   <h5>Industry-Best Energy Solutions</h5>
+                   <p>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing
+                     elit, sed do.
+                   </p>
+                 </div>
+               </div>
+             </div>
+             <div class="page-34-map-img">
+               <div class="page-34-map-img-container">
+                 <img src="/assets/18.png" alt="map_img" />
+                 <div class="page-34-map-info-wrapper">
+                   <div class="page-34-map-info">
+                     <img
+                       src="/assets/location-dot-sharp-solid.svg"
+                       alt="location_img"
+                     />
+                     <span>Sunbase Facilities</span>
+                   </div>
+                   <div class="page-34-map-info">
+                     <img
+                       src="/assets/square-sharp-solid.svg"
+                       alt="square_img"
+                     />
+                     <span>Dealer Coverage</span>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+
+ <div id="solar-eligibility-&-qualification" class="section">
+   <div class="container header">
+     <div class="slogo">
+       <img src="/assets/sunbase.png" alt="sunbase_logo" />
+     </div>
+   </div>
+   <div class="main-content">
+     <div class="wrapper container">
+       <div class="page-35-main-content">
+         <h1>Solar Eligibility & Qualification</h1>
+         <div class="page-35-features-wrapper">
+           <div class="page-35-feature">
+             <div class="page-35-clip-path-wrapper">
+               <div
+                 class="page-35-right-clip-path clip-path-bg-img-1"
+               ></div>
+             </div>
+             <div class="page-35-feature-points-wrapper">
+               <h3>Home Owner must Qualify</h3>
+               <ul class="page-35-feature-points">
+                 <li>Lorem ipsum dolor sit .</li>
+               </ul>
+             </div>
+           </div>
+           <div class="page-35-feature">
+             <div class="page-35-clip-path-wrapper">
+               <div
+                 class="page-35-right-clip-path clip-path-bg-img-2"
+               ></div>
+             </div>
+             <div class="page-35-feature-points-wrapper">
+               <h3>Site Survey must be approved</h3>
+               <ul class="page-35-feature-points">
+                 <li>Lorem ipsum dolor sit .</li>
+                 <li>Lorem ipsum dolor sit .</li>
+                 <li>Lorem ipsum dolor sit .</li>
+               </ul>
+             </div>
+           </div>
+           <div class="page-35-feature">
+             <div class="page-35-clip-path-wrapper">
+               <div
+                 class="page-35-right-clip-path clip-path-bg-img-3"
+               ></div>
+             </div>
+             <div class="page-35-feature-points-wrapper">
+               <h3>Utility must approve system</h3>
+               <ul class="page-35-feature-points">
+                 <li>Lorem ipsum dolor sit .</li>
+               </ul>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+
+ <div id="before-and-after" class="section">
+   <div class="container header">
+     <div class="slogo">
+       <img src="/assets/sunbase.png" alt="sunbase_logo" />
+     </div>
+   </div>
+   <div class="main-content">
+     <div class="wrapper container">
+       <div class="page-36-main-content">
+         <div class="page-36-part-1">
+           <h2>Bill Before</h2>
+           <div class="page-36-details-of-electric-charge">
+             <div class="page-36-details-of-electric-charge-wrapper">
+               <div class="page-36-img-container">
+                 <img
+                   src="/assets/plug-circle-bolt-regular.svg"
+                   alt="power-plug_img"
+                 />
+               </div>
+               <div class="page-36-electricity-heading">
+                 <h5>Details of your Electricity charges</h5>
+                 <p class="bold">Your rate: Residential Service (RS)</p>
+               </div>
+             </div>
+             <div class="page-36-less">
+               <div class="page-36-less-heading">
+                 <span class="bold">Meter # 126475131</span>
+                 <span class="bold">Usage</span>
+               </div>
+               <div class="page-36-less-wrapper">
+                 <span class="special bold">Less</span>
+                 <div class="page-36-less-info-wrapper">
+                   <div class="page-36-less-info">
+                     <span>Actual reading Sep 27,2019</span>
+                     <span>85406</span>
+                   </div>
+                   <div class="page-36-less-info">
+                     <span>Actual reading Sep 27,2019</span>
+                     <span>84721</span>
+                   </div>
+                   <div class="page-36-less-info">
+                     <span class="total bold"
+                       >Total electric you used in 30 days</span
+                     >
+                     <span class="total bold">685 kWh</span>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="page-36-delivery-charges">
+               <h5>Delivery Charges</h5>
+               <div class="page-36-delivery-charges-heading">
+                 <div class="page-36-monthly-charges">
+                   <span>Monthly Service Charge</span>
+                   <span>$4.92</span>
+                 </div>
+                 <span>Charges for delivering electric to you:</span>
+               </div>
+               <div class="page-36-kwh-charges">
+                 <span>kWh Charges</span>
+                 <div class="page-36-kwh-charges-wrapper">
+                   <div class="page-36-kwh-charges-info">
+                     <span>For the First</span>
+                     <span>60 kWh × $0.048667</span>
+                     <span>$2.92</span>
+                   </div>
+                   <div class="page-36-kwh-charges-info">
+                     <span>For the Next</span>
+                     <span>8 kWh × $0.052500</span>
+                     <span>$0.42</span>
+                   </div>
+                   <div class="page-36-kwh-charges-info">
+                     <span>For the First</span>
+                     <span>540 kWh × $0.048833</span>
+                     <span>$26.37</span>
+                   </div>
+                   <div class="page-36-kwh-charges-info">
+                     <span>For the Next</span>
+                     <span>77 kWh × $0.052857</span>
+                     <span>$4.07</span>
+                   </div>
+                   <div class="page-36-kwh-charges-info">
+                     <span class="bold total"
+                       >Total electric delivery charges</span
+                     >
+                     <span class="bold total">$38.73</span>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="page-36-supply-charges">
+               <h5>Supply Charges</h5>
+               <div class="page-36-supply-charges-heading">
+                 <span>Cost of electric supplied by PSE&G:</span>
+               </div>
+               <div class="page-36-charges">
+                 <span>Charges</span>
+                 <div class="page-36-charges-wrapper">
+                   <div class="page-36-charges-info">
+                     <span>For the First</span>
+                     <span>60 kWh × $0.112000</span>
+                     <span>$6.72</span>
+                   </div>
+                   <div class="page-36-charges-info">
+                     <span>For the Next</span>
+                     <span>8 kWh × $0.121250</span>
+                     <span>$0.97</span>
+                   </div>
+                   <div class="page-36-charges-info">
+                     <span>For the First</span>
+                     <span>540 kWh × $0.108111</span>
+                     <span>$58.38</span>
+                   </div>
+                   <div class="page-36-charges-info">
+                     <span>For the Next</span>
+                     <span>77 kWh × $117662</span>
+                     <span>$9.06</span>
+                   </div>
+                   <div class="page-36-charges-info">
+                     <span class="bold total"
+                       >Total electric supply charges</span
+                     >
+                     <span class="bold total">$75.13</span>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="page-36-total-electric-charges">
+               <div class="page-36-total-electric-charges-heading-wrapper">
+                 <div class="page-36-total-electric-charges-img-wrapper">
+                   <img
+                     src="/assets/plug-circle-bolt-regular.svg"
+                     alt="power-plug_img"
+                   />
+                 </div>
+                 <h5>Total Electric Charges</h5>
+               </div>
+               <h5>$113.86</h5>
+             </div>
+             <div class="page-36-how-much-electricity-used">
+               <h5>How much electric are you using?</h5>
+               <div class="page-36-how-much-electricity-used-graph"></div>
+             </div>
+           </div>
+           <h2>Cost With Inflation</h2>
+         </div>
+         <div class="page-36-part-2">
+           <h2>Bill Before</h2>
+           <div class="page-36-details-of-electric-charge">
+             <div class="page-36-details-of-electric-charge-wrapper">
+               <div class="page-36-img-container">
+                 <img
+                   src="/assets/plug-circle-bolt-regular.svg"
+                   alt="power-plug_img"
+                 />
+               </div>
+               <div class="page-36-electricity-heading">
+                 <h5>Details of your Electricity charges</h5>
+                 <p class="bold">Your rate: Residential Service (RS)</p>
+               </div>
+             </div>
+             <div class="page-36-less">
+               <div class="page-36-less-heading">
+                 <span class="bold">Meter # 127632114</span>
+                 <span class="bold">Usage in</span>
+               </div>
+               <div class="page-36-less-wrapper">
+                 <span class="special bold">Less</span>
+                 <div class="page-36-less-info-wrapper">
+                   <div class="page-36-less-info">
+                     <span>Actual reading Jun 29,2020</span>
+                     <span>85406</span>
+                   </div>
+                   <div class="page-36-less-info">
+                     <span>Actual reading Jun 29,2020</span>
+                     <span>1426</span>
+                   </div>
+                   <div class="page-36-less-info">
+                     <span class="total bold">Total kWh In</span>
+                     <span class="total bold">490</span>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="page-36-less">
+               <div class="page-36-less-heading">
+                 <span class="bold">Meter # 127632114</span>
+                 <span class="bold">Usage out</span>
+               </div>
+               <div class="page-36-less-wrapper">
+                 <span class="special bold">Less</span>
+                 <div class="page-36-less-info-wrapper">
+                   <div class="page-36-less-info">
+                     <span>Actual reading Jun 29,2020</span>
+                     <span>1939</span>
+                   </div>
+                   <div class="page-36-less-info">
+                     <span>Actual reading Jun 29,2020</span>
+                     <span>990</span>
+                   </div>
+                   <div class="page-36-less-info">
+                     <span class="total bold">Total kWh In</span>
+                     <span class="total bold">949</span>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="page-36-less-wrapper m-left">
+               <div class="page-36-less-info-wrapper">
+                 <div class="page-36-less-info">
+                   <span>Net Usage</span>
+                   <span>-459</span>
+                 </div>
+                 <div class="page-36-less-info">
+                   <span>Cumulative kWh</span>
+                   <span>-573</span>
+                 </div>
+                 <div class="page-36-less-info">
+                   <span>Adjusted Net kWh</span>
+                   <span>0</span>
+                 </div>
+               </div>
+             </div>
+             <div class="page-36-delivery-charges">
+               <h5>Delivery Charges</h5>
+               <div class="page-36-delivery-charges-heading">
+                 <div class="page-36-monthly-charges">
+                   <span>Monthly Service Charge</span>
+                   <span>$4.95</span>
+                 </div>
+                 <div class="page-36-monthly-charges">
+                   <span class="total bold"
+                     >Total electric delivery charges</span
+                   >
+                   <span class="total bold">$4.95</span>
+                 </div>
+               </div>
+             </div>
+             <div class="page-36-total-electric-charges">
+               <div class="page-36-total-electric-charges-heading-wrapper">
+                 <div class="page-36-total-electric-charges-img-wrapper">
+                   <img
+                     src="/assets/plug-circle-bolt-regular.svg"
+                     alt="power-plug_img"
+                   />
+                 </div>
+                 <h5>Total Electric Charges</h5>
+               </div>
+               <h5>$4.95</h5>
+             </div>
+             <div class="page-36-how-much-electricity-used">
+               <h5 class="bold">Net Metering Program</h5>
+               <div class="page-36-how-much-electricity-used-graph"></div>
+             </div>
+           </div>
+           <h2>Cost With Inflation</h2>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+
+ <div id="buy-your-system" class="section page-37-split-section">
+   <div class="page-37-section-1">
+     <div class="container header">
+       <div class="slogo">
+         <img src="/assets/sunbase.png" alt="sunbase_logo" />
+       </div>
+     </div>
+     <div class="main-content">
+       <div class="wrapper container">
+         <div class="page-37-main-content">
+           <div class="page-37-main-content-wrapper">
+             <div class="page-37-part-1">
+               <div class="page-37-part-1-wrapper">
+                 <h1>Buy Your System</h1>
+                 <p>
+                   Choose the option that's best for your needs, help
+                   increase the value of your home? and enjoy the benefits
+                   of competitive interest rate offerings.
+                 </p>
+               </div>
+             </div>
+             <div class="page-37-part-2">
+               <div class="page-37-features-list">
+                 <div class="page-37-feature">
+                   <div class="page-37-img-container">
+                     <img src="/assets/badge-check-solid.svg" alt="" />
+                   </div>
+                   <div class="page-37-feature-info">
+                     <h5>Pay Nothing Upfront</h5>
+                     <p>
+                       Lorem ipsum dolor sit amet, consectetur adipiscing
+                       elit, sed do.
+                     </p>
+                   </div>
+                 </div>
+                 <div class="page-37-feature">
+                   <div class="page-37-img-container">
+                     <img src="/assets/badge-check-solid.svg" alt="" />
+                   </div>
+                   <div class="page-37-feature-info">
+                     <h5>Boost Your Home's Value</h5>
+                     <p>
+                       Lorem ipsum dolor sit amet, consectetur adipiscing
+                       elit, sed do.
+                     </p>
+                   </div>
+                 </div>
+                 <div class="page-37-feature">
+                   <div class="page-37-img-container">
+                     <img src="/assets/badge-check-solid.svg" alt="" />
+                   </div>
+                   <div class="page-37-feature-info">
+                     <h5>Payment Flexibility</h5>
+                     <p>
+                       Lorem ipsum dolor sit amet, consectetur adipiscing
+                       elit, sed do.
+                     </p>
+                   </div>
+                 </div>
+                 <div class="page-37-feature">
+                   <div class="page-37-img-container">
+                     <img src="/assets/badge-check-solid.svg" alt="" />
+                   </div>
+                   <div class="page-37-feature-info">
+                     <h5>Incentives & Tax Credits</h5>
+                     <p>
+                       Lorem ipsum dolor sit amet, consectetur adipiscing
+                       elit, sed do.
+                     </p>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="page-37-part-3">
+               <p>
+                 1. For qualified customers. Monthly payments will vary
+                 based on system configurations and financing option
+                 chosen.
+               </p>
+               <p>
+                 2. Zillow, Homes with Solar Panels Sell for 4.1% More, a
+                 comparison of home values with and without solar, in New
+                 York, NY, Orlando, FL, San Francisco, CA, Los Angeles, CA
+                 and Riverside, CA. April 2019.
+               </p>
+               <p>
+                 3. Tax credits subject to change. SunPower does not
+                 warrant, guarantee or otherwise advise its customers about
+                 specific tax outcomes. Consult your tax advisor regarding
+                 the solar tax credit and how it applies to your specific
+                 circumstances.
+               </p>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+   <div class="page-37-section-2"></div>
+ </div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
